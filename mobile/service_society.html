@@ -1,0 +1,67 @@
+<div class="pages   ">
+    <!-- Page, data-page contains page name-->
+    <div class="page" data-page="service_society">
+        <!-- Scrollable page content-->
+        <div class="page-content infinite-scroll" data-distance="50">
+            <div class="service_society">
+                <div class="wrap">
+                    <main class="content">
+                        <section class="header">
+                            <div class="header__bar">
+                                <div class="header__bar__back"><a class="back" href="index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>
+                                <h1 class="header__bar__title"><a data-toggle="collapse" href="#cat-nav" aria-expanded="true" aria-controls="cat-nav">選擇資料分類 <i class="fa fa-angle-up" aria-hidden="true"></i></a></h1>
+                            </div>
+                        </section>
+                        <!--   common nav tpl-->
+                        <div id="tpl_common_nav"></div>
+                        <section class="section section--full">
+                            <div class="search">
+                                <div class="input-group stylish-input-group">
+                                    <input type="text" class="form-control" placeholder="搜尋資料"> <span class="input-group-addon"><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button></span></div>
+                            </div>
+                            <div class="filter"><a href="#" class="filter__trigger"><span class="filter__title">篩選資料類型</span> <span class="filter__icon"><i class="fa fa-filter" aria-hidden="true"></i></span></a>
+                                <ul class="filter__option hide">
+                                    <li><a class="filter__option__item" href="service.html">全部</a></li>
+                                    <li><a class="filter__option__item" href="service_care.html">健康保健</a></li>
+                                    <li><a class="filter__option__item" href="service_service.html">醫療服務</a></li>
+                                    <li><a class="filter__option__item active" href="service_society.html">社區照護</a></li>
+                                    <li><a class="filter__option__item" href="service_elderlyhome.html">院護服務</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section>
+                            <h2 class="page-header">社區照護</h2>
+                            <div class="section" id="tpl_service_society">
+                                <!-- tpl start-->
+                                <script id="tpl_J_service_society" type="text/template">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        {@each list as it,index}
+                                        {# 注释: 取索引小于等于3，也就是4个，循环遍历新闻列表 }
+                                        {@if index<=6}
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-${index}c" aria-expanded="false" aria-controls="collapse-${index}"   class="">${it.title}</a></h4></div>
+                                            <div id="collapse-${index}c" class="panel-collapse collapse" role="tabpanel" aria-expanded="false" aria-labelledby="heading-${index}">
+                                                <div class="panel-body">
+                                                    $${it.content}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {@/if}
+                                        {@/each}
+                                    </div>
+                                </script>
+                                <!-- tpl end-->
+                            </div>
+                            <!-- end  mock-->
+                        </section>
+                    </main>
+                </div>
+            </div>
+            <!-- 数据少无线滚动gif隐藏
+            <div class="infinite-scroll-preloader">
+                <div class="preloader"></div>
+              </div> -->
+        </div>
+    </div>
+</div>

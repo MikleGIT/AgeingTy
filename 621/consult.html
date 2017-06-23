@@ -1,0 +1,58 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding">
+            <a href="#" class="back link"><i class="icon icon-back"></i><span>Home</span></a>
+        </div>
+        <div class="center sliding">
+            <a data-toggle="collapse" href="#cat-nav" aria-expanded="true" aria-controls="cat-nav">選擇資料分類 <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+        </div>
+        <div class="right"></div>
+    </div>
+</div>
+<div class="pages navbar-through">
+    <!-- Page, data-page contains page name-->
+    <div class="page" data-page="consult">
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <div class="consult">
+                <div class="wrap">
+                    <main class="content">
+                        <!--   common nav tpl-->
+                        <div id="tpl_common_nav"></div>
+                        <section class="section section--full">
+                            <div class="search">
+                                <div class="input-group stylish-input-group">
+                                    <input type="text" class="form-control" placeholder="搜尋資料"> <span class="input-group-addon"><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button></span></div>
+                            </div>
+                            <div class="filter"><a href="#" class="filter__trigger"><span class="filter__title">篩選資料類型</span> <span class="filter__icon"><i class="fa fa-filter" aria-hidden="true"></i></span></a>
+                                <ul class="filter__option hide">
+                                    <li><a class="filter__option__item J_consult_link" href="/challenge">宗旨、對象及理念原則</a></li>
+                                    <li><a class="filter__option__item J_consult_link" href="/construction">機制構成</a></li>
+                                    <li><a class="filter__option__item J_consult_link" href="/principle">長者服務十年行動計劃</a></li>
+                                    <li><a class="filter__option__item J_consult_link" href="/health">醫社服務</a></li>
+                                    <li><a class="filter__option__item J_consult_link" href="/rights">權益保障</a></li>
+                                    <li><a class="filter__option__item J_consult_link" href="/society">社會參與</a></li>
+                                    <li><a class="filter__option__item J_consult_link" href="/living">生活環境</a></li>
+                                    <li><a class="filter__option__item J_consult_link" href="/cooperation">協作、推行與評檢</a></li>
+                                    <li><a class="filter__option__item J_consult_link" href="/documents">文本及單張下載</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section>
+                            <h2 class="page-header">宗旨、對象及理念原則</h2>
+                            <div class="section">
+                                <!-- tpl start-->
+                                <div id="tpl_consult">
+                                    <script id="tpl_J_consult" type="text/template">
+                                        {@each list as it, index} $${it.content} {@/each}
+                                    </script>
+                                </div>
+                                <!-- tpl end-->
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

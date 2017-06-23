@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="assets/styles/vendor.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/my-app.css">
+    
+</head>
+
+<body>
+    <!-- Views-->
+    <div class="views tabs toolbar-through">
+        <!-- Your main view, should have "view-main" class-->
+        <div id="view-1" class="view view-main tab active" data-page="index-1">
+<!-- 
+            <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left"></div>
+            <div class="center sliding" style="left: 0px;">Smart Select</div>
+            <div class="right"></div>
+          </div>
+        </div> -->
+            <!-- Top Navbar-->
+            <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes  toolbar-through  -->
+            <div class="pages    ">
+                <!-- Page, data-page contains page name-->
+<!-- 动态路由 -->
+                <script type="text/template" id="myPage">
+                     
+                </script>  
+
+
+                <div class="page" data-page="index-1">
+                    <!-- Scrollable page content-->
+                    <div class="page-content">
+                        <div class="home">
+                            <div class="wrap">
+                                <section class="header">
+                                    <div class="header__bar">
+                                        <!-- <div class="header__bar__back"><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div> -->
+                                        <h1 class="header__bar__title">澳門長者服務手機應用程式</h1>
+                                        <!-- <div class="header__bar__bookmark"><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></div> --></div>
+                                    <div class="header__more hide">
+                                        <div class="header__intro">(下稱"長者網")是本澳首個以長者服務為主題的一站式綜合資訊平台，網站內容涵蓋各類與長者相關的福利政策、法例、服務項目、健康資訊、文娛康體活動等資料。</div>
+                                        <div class="header__cta"><a href="#">了解更多</a>
+                                            <!-- <a href="#">聯絡我們</a> --><a class="pull-right okay" href="#"><i class="fa fa-check-circle" aria-hidden="true"></i> 我知道了</a></div>
+                                    </div>
+                                </section>
+                                <section class="section section--full">
+                                    <div class="search">
+                                        <div class="input-group stylish-input-group">
+                                            <input type="text" class="form-control" placeholder="搜尋資料"> <span class="input-group-addon"><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button></span></div>
+                                    </div>
+                                </section>
+                                <div class="swiper-container swiper-1">
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-wrapper" id="tpl_slide">
+                                    <script id="tpl_J_slide" type="text/template">
+                                        {@each list as it,index}
+                                        {# 注释: 取索引小于等于3，也就是4个}
+                                        {@if index<=3}
+                                        <div class="swiper-slide"><a href="${it.imgUrl}"><h2 class="slides__heading">${it.title}</h2></a></div>
+                                        {@/if}
+                                        {@/each}
+                                    </script>
+                                    <!-- eg： <div class="swiper-slide"><a href="#"><h2 class="slides__heading">政府跨部門協作加快落實長者十年行動計劃進度</h2></a></div> -->
+                                </div>
+                            </div>
+                            <div class="icon-menu">
+                                <div class="section section--service section--icon">
+                                    <a href="service.html"  >
+                                        <div class="section__thumb section__thumb--icon"></div>
+                                        <h2 class="section__heading section__heading--icon">服務</h2>
+                                    </a>
+                                </div>
+                                <div class="section section--benefits section--icon">
+                                    <a href="discount.html">
+                                        <div class="section__thumb section__thumb--icon"></div>
+                                        <h2 class="section__heading section__heading--icon">優惠</h2>
+                                    </a>
+                                </div>
+                                <div class="section section--news section--icon">
+                                    <a href="news.html">
+                                        <div class="section__thumb section__thumb--icon"></div>
+                                        <h2 class="section__heading section__heading--icon">新聞</h2>
+                                    </a>
+                                </div>
+                                <div class="section section--learning section--icon">
+                                    <a href="education.html">
+                                        <div class="section__thumb section__thumb--icon"></div>
+                                        <h2 class="section__heading section__heading--icon">學習</h2>
+                                    </a>
+                                </div>
+                                <div class="section section--event section--icon">
+                                    <a href="event.html">
+                                        <div class="section__thumb section__thumb--icon"></div>
+                                        <h2 class="section__heading section__heading--icon">活動</h2>
+                                    </a>
+                                </div>
+                                <div class="section section--advisory section--icon">
+                                    <a href="health.html">
+                                        <div class="section__thumb section__thumb--icon"></div>
+                                        <h2 class="section__heading section__heading--icon">健康</h2>
+                                    </a>
+                                </div>
+                            </div>
+                            
+ 
+
+
+
+                        </div>
+                    </div>
+                    <!-- end -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="view-2" class="view tab" data-page="index-2">
+        <div class="pages    ">
+            <div class="page" data-page="index-2">
+                <div class="page-content">
+                    <div class="bookrmark">
+                        <div class="wrap">
+                            <main class="content">
+                                <section class="header">
+                                    <div class="header__bar">
+                                        <h1 class="header__bar__title"><a data-toggle="collapse" href="#cat-nav" aria-expanded="false" aria-controls="cat-nav">我的收藏</a></h1></div>
+                                </section>
+                                <section class="section section--full">
+                                    <div class="search">
+                                        <div class="input-group stylish-input-group">
+                                            <input type="text" class="form-control" placeholder="搜尋資料"> <span class="input-group-addon"><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button></span></div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <ul class="list-head">
+                                        <li class="list-head__item">資料</li>
+                                        <li class="list-head__item list-head__item--right">刊登日期</li>
+                                    </ul>
+                                    <div class="section">
+                                        <ul class="post-list">
+                                            <li class="post-list__item"><a href="single.html"><span class="post-list__item__title">關愛長者適切照護系列培訓—「生命風暴」淺析中風課程</span> <span class="post-list__item__date">2016年11月24日</span></a></li>
+                                            <li class="post-list__item"><a href="single.html"><span class="post-list__item__title">排排舞高班(1)</span> <span class="post-list__item__date">2016年11月24日</span></a></li>
+                                            <li class="post-list__item"><a href="single.html"><span class="post-list__item__title">健身氣功中班(1)</span> <span class="post-list__item__date">2016年11月24日</span></a></li>
+                                            <li class="post-list__item"><a href="single.html"><span class="post-list__item__title">關愛長者適切照護系列培訓—「生命風暴」淺析中風課程</span> <span class="post-list__item__date">2016年11月24日</span></a></li>
+                                            <li class="post-list__item"><a href="single.html"><span class="post-list__item__title">排排舞高班(1)</span> <span class="post-list__item__date">2016年11月24日</span></a></li>
+                                            <li class="post-list__item"><a href="single.html"><span class="post-list__item__title">健身氣功中班(1)</span> <span class="post-list__item__date">2016年11月24日</span></a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="view-3" class="view tab" data-page="index-3">
+        <div class="pages    ">
+            <div class="page" data-page="index-3">
+                <div class="page-content">
+                    <div class="contact">
+                        <div class="wrap">
+                            <main class="content">
+                                <section class="header">
+                                    <div class="header__bar">
+                                        <h1 class="header__bar__title">聯絡我們</h1></div>
+                                </section>
+                                <section class="post">
+                                    <div class="sheet-article">
+                                        <table class="table">
+                                            <tr>
+                                                <td class="item">電話</td>
+                                                <td class="desc">8399 7705</td>
+                                            </tr>
+                                            <tr>
+                                                <td>電郵</td>
+                                                <td>ageing@ias.gov.mo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>傳真</td>
+                                                <td>2835 5161</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </section>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="view-4" class="view tab" data-page="index-4">
+        <div class="pages    ">
+            <div class="page" data-page="index-4">
+                <div class="page-content">
+                    <div class="contact">
+                        <div class="wrap">
+                            <main class="content">
+                                <section class="header">
+                                    <div class="header__bar">
+                                        <h1 class="header__bar__title">發表意見</h1></div>
+                                </section>
+                                <section class="post">
+                                    <div class="post-content">
+                                        <form role="form">
+                                            <div class="form-group">
+                                                <label for="name-input">姓名</label>
+                                                <input type="text" class="form-control" placeholder="請輸入您的名字（可不填）" id="name-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="contact-input">聯絡方式</label>
+                                                <input type="text" class="form-control" placeholder="請輸入您的電話/地址/電郵地址（可不填）" id="contact-input">
+                                            </div>
+                                            <div class="form-group textarea">
+                                                <label for="commentbox">意見內容</label>
+                                                <textarea class="form-control" rows="6" placeholder="請輸入您的意見" id="commentbox"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary btn-full btn-theme">提交</button>
+                                        </form>
+                                    </div>
+                                </section>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="view-5" class="view tab" data-page="index-5">
+        <div class="pages    ">
+            <div class="page" data-page="index-5">
+                <div class="page-content">
+                    <div class="setting">
+                        <div class="wrap">
+                            <main class="content">
+                                <section class="header">
+                                    <div class="header__bar">
+                                        <h1 class="header__bar__title"><a data-toggle="collapse" href="#cat-nav" aria-expanded="false" aria-controls="cat-nav">我的設定</a></h1></div>
+                                </section>
+                                <section>
+                                    <div class="section">
+                                        <ul class="post-list">
+                                            <li class="post-list__item"><a href="#"><span class="post-list__item__title">字型大小</span> <span class="post-list__item__date">正常</span></a></li>
+                                            <li class="post-list__item"><a href="#"><span class="post-list__item__title">底色字色轉換（高反差）</span> <span class="post-list__item__date">白底黑字</span></a></li>
+                                            <li class="post-list__item"><a href="#"><span class="post-list__item__title">推送</span> <span class="post-list__item__date">開啟</span></a></li>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toolbar tabbar tabbar-labels">
+        <div class="toolbar-inner">
+            <a href="#view-1" data-reload="true" data-ignore-cache="true" class="tab-link active">
+                <i class="fa fa-home"></i>
+                <span class="tabbar-label">首頁</span>
+            </a>
+            <a href="#view-2" data-reload="true" data-ignore-cache="true" class="tab-link">
+                <i class="fa fa-star">
+                    </i>
+                <span class="tabbar-label">收藏</span>
+            </a>
+            <a href="#view-3" data-reload="true" data-ignore-cache="true" class="tab-link">
+                <i class="fa fa-envelope"></i>
+                <span class="tabbar-label">聯絡</span>
+            </a>
+            <a href="#view-4" data-reload="true" data-ignore-cache="true" class="tab-link">
+                <i class="fa fa-question-circle"></i>
+                <span class="tabbar-label">咨詢</span>
+            </a>
+            <a href="#view-5" data-reload="true" data-ignore-cache="true" class="tab-link">
+                <i class="fa fa-cog"></i>
+                <span class="tabbar-label">設定</span>
+            </a>
+        </div>
+    </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <!-- <script src="https://cdn.bootcss.com/juicer/0.6.14/juicer-min.js"></script> -->
+    <script type="text/javascript" src="assets/scripts/juicer.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/plugins.js"></script>
+    <!-- <script src="assets/scripts/main.js"></script> -->
+    <script src="js/discount_benefit11.js"></script>
+
+
+    <script id="tpl_J_edu_detail" type="text/template">
+    <div class="pages">
+        <!-- Page, data-page contains page name-->
+        <div class="page" data-page="index_edu_detail">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+                <!-- content -->
+                <div class="single">
+                    <div class="wrap">
+                        <main class="content">
+                            <section class="header">
+                                <div class="header__bar">
+                                    <div class="header__bar__back"><a href="#" class="back"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>
+                                    <h1 class="header__bar__title">課程內容</h1>
+                                    <div class="header__bar__bookmark"><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></div>
+                                </div>
+                            </section>
+                            <section class="post">
+                                 {@each list as it,index} {# 注释: 取索引小于等于3，也就是4个，循环遍历新闻列表 }
+                                        <h2 class="post__title">${it.title}</h2>
+                                        <div class="post__date">${it.createdAt}</div>
+                                        <div class="post__content">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">主辦機構</td>
+                                                        <td class="desc">${it.organization}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>課程內容</td>
+                                                        <td>$${it.detail}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>上課地點</td>
+                                                        <td>${it.address}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>開課日期</td>
+                                                        <td>${it.start_at}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>上課時間及形式</td>
+                                                        <td>${it.lesson_time}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>名額</td>
+                                                        <td>${it.quota}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>費用</td>
+                                                        <td>${it.fee}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>報名方式</td>
+                                                        <td>${it.apply}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>查詢電話</td>
+                                                        <td>${it.contact}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>備註</td>
+                                                        <td>$${it.remark}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        {@/each}
+                                </div>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+                <!-- content end -->
+            </div>
+        </div>
+    </div>
+    </script>
+
+
+    <script id="tpl_J_news_detail" type="text/template">
+    <div class="pages">
+        <!-- Page, data-page contains page name-->
+        <div class="page" data-page="index_edu_detail">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+                <!-- content -->
+                <div class="single">
+                    <div class="wrap">
+                        <main class="content">
+                            <section class="header">
+                                <div class="header__bar">
+                                    <div class="header__bar__back"><a href="#" class="back"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>
+                                    <h1 class="header__bar__title">新聞內容</h1>
+                                    <div class="header__bar__bookmark"><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></div>
+                                </div>
+                            </section>
+                            <section class="post">
+                                 {@each list as it,index} {# 注释: 取索引小于等于3，也就是4个，循环遍历新闻列表 }
+                                        <h2 class="post__title">${it.title}</h2>
+                                        <div class="post__date">${it.createdAt}</div>
+                                        <div class="post__content">
+                                          $${it.content}
+                                        </div>
+                                 {@/each}
+                                </div>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+                <!-- content end -->
+            </div>
+        </div>
+    </div>
+    </script>
+
+ <script id="tpl_J_discount_detail" type="text/template">
+    <div class="pages">
+        <!-- Page, data-page contains page name-->
+        <div class="page" data-page="index_discount_detail">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+                <!-- content -->
+                <div class="single">
+                    <div class="wrap">
+                        <main class="content">
+                            <section class="header">
+                                <div class="header__bar">
+                                    <div class="header__bar__back"><a href="#" class="back"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>
+                                    <h1 class="header__bar__title">優惠内容</h1>
+                                    <div class="header__bar__bookmark"><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></div>
+                                </div>
+                            </section>
+                            <section class="post">
+                                 {@each list as it,index} {# 注释: 取索引小于等于3，也就是4个，循环遍历新闻列表 }
+                                        <h2 class="post__title">${it.title}</h2>
+                                        <div class="post__date">${it.createdAt}</div>
+                                        <div class="post__content">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="item">商號/機構</td>
+                                                        <td class="desc">${it.organization}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>優惠內容</td>
+                                                        <td>$${it.discount}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>地址</td>
+                                                        <td>${it.adress}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>聯絡電話</td>
+                                                        <td>${it.contact}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        {@/each}
+                                </div>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+                <!-- content end -->
+            </div>
+        </div>
+    </div>
+    </script>
+
+ 
+</body>
+
+</html>

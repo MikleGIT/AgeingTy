@@ -1,0 +1,6 @@
+.pdf-download, .doc-download, .watch-video, .view-image {
+	display: inline-block !important;
+	width: 20px;
+	height: 20px;
+	background-color: #eee;
+}
